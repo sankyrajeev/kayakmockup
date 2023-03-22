@@ -25,10 +25,16 @@ li {
     box-sizing: border-box;
     background-color: #f2f2f2;
     border-top: 1px solid #cacaca;
+    cursor: pointer;
 
 }
 
-li .text--content{
+li .text--content:hover {
+    font-size: 20px;
+    ;
+}
+
+li .text--content {
     margin-left: 20px;
 }
 
@@ -56,5 +62,70 @@ li::after {
 @media (max-width: 480px) {
     li {
         width: 100%;
+    }
+}
+
+h2 {
+    clear: both;
+    padding-top: 40px;
+    text-align: start;
+    margin-left: 30px;
+    font-weight: 350;
+}
+
+p {
+    clear: both;
+    text-align: start;
+    margin-left: 30px;
+    font-weight: 350;
+
+}
+
+.air--info {
+    width: 100%;
+}
+.air--info img {
+    margin-left: auto;
+    margin-top: 40px;
+}
+
+.website {
+    color: #f49000;
+    text-decoration: none;
+    left: 0;
+    cursor: pointer;
+}
+
+.website {
+    left: 0;
+}
+
+.button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    color: #f49000;
+}
+
+.button:hover {
+    color: darkgray;
+}
+
+@media (min-width: 768px) {
+    .button {
+        position: relative;
+        float: left;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+}
+
+@media (min-width: 200px) {
+    .button {
+        position: relative;
+        float: left;
+        margin-top: 0px;
+        margin-left: 15px;
     }
 }
