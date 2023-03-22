@@ -87,6 +87,7 @@ function Airlines() {
                         value={searchTerm}
                         onChange={handleInputChange}
                     />
+                     <p>{filteredAirlines.length} airlines found</p>
                     <ul>
                         {filteredAirlines.map(airline => (
                             <li key={airline.code} onClick={() => handleClick(airline)}>
